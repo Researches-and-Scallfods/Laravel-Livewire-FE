@@ -1,0 +1,18 @@
+.pincode-input-container {
+	display:flex;
+	justify-content: space-between;
+}
+.pincode-input-container input{
+	border-radius: 10px;
+	text-align: center;
+}
+.pincode-input-container input.form-control{
+	padding: 10px;
+}
+.pincode-input-text, .form-control.pincode-input-text {
+	width:50px;
+	float:left;
+}
+.pincode-input-error{
+	clear:both;
+}

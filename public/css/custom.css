@@ -1,0 +1,112 @@
+body{
+    font-family: Roboto, sans-serif;
+    color: #000;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.bg-main-gradient {
+    background: linear-gradient(86.28deg, #2F8651 -17.15%, #FFCF49 253.1%);
+}
+.text-main-gradient{
+    background: -webkit-linear-gradient(86.28deg, #2F8651 -17.15%, #FFCF49 253.1%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-top a div{
+    border-bottom: 3px solid #fff;
+    color: #4A4A4A;
+}
+
+.nav-top a.active div, .nav-top a:hover div{
+    border-bottom: 3px solid #2F8651;
+    font-weight: 700;
+    color: #000;
+}
+
+.bg-youtube{
+    background-image: url(../images/ornaments/youtube.png);
+    background-size: cover;
+}
+
+.bg-program{
+    background-image: url(../images/ornaments/program.png);
+    background-size: 350%;
+    background-repeat: no-repeat;
+}
+
+.bg-statistik{
+    background-image: url(../images/ornaments/program.png);
+    background-size: 660%;
+    background-repeat: no-repeat;
+}
+
+.text-title{
+    font-weight: 700;
+    font-size: 32px;
+}
+.text-subtitle{
+    font-size: 20px;
+}
+
+.shine {
+    background: #f6f7f8;
+    background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    display: inline-block;
+    position: relative; 
+    
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: placeholderShimmer;
+    -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes placeholderShimmer {
+    0% {
+        background-position: -468px 0;
+    }
+    
+    100% {
+        background-position: 468px 0; 
+    }
+}
+
+.x-scroll{
+    overflow-x: auto;
+}
+
+.x-scroll::-webkit-scrollbar {
+    height: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkitbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #2F8651;
+    outline: 1px solid #2F8651;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
